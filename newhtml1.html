@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Rows in Bootstrap</title>
+        <style>
+            .container_decor{
+                background-color: #000000;
+                margin-top:10px;
+                padding: 20px;
+             }
+            .column_style{
+                border:1px #000 solid;
+                background-color:#D3D3D3;
+            }
+            .hr_new {
+               border: 2px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container_fluid container_decor  ">
+           <font color="white"> <h1 style="text-align:center;">REGISTRATION FORM FOR RESUME</h1></font>
+        </div>
+        <hr class="hr_new">
+        <div class="container column_style">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>PERSONAL INFORMATION:     </h3>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" name="firstname">
+                        </div>
+                        <div class="form-group ">
+                               <label for="lastname">last Name</label>
+                            <input type="text" class="form-control" name="lastname">
+                        </div>
+                         <div class="form-group">
+                               <label for="dob">DOB</label>
+                               <span class="glyphicon glyphicon-calendar">:</span>
+                               
+                            <input type="text" class="form-control" name="dob">
+                        </div>
+                    </form>
+                </div>    
+            </div>  
+        </div>
+        <hr class="hr_new">
+        
+        <div class="container column_style ">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Address:     </h3>
+                    <form>
+                        <div class="form-group">
+                            
+                            <input type="text" class="form-control input-lg" name="street_address">
+                             <label for="street_address">Street Address</label>
+                        </div>
+                        <div class="form-group ">
+                               
+                            <input type="text" class="form-control input-lg" name="street_address2">
+                            <label for="treet_address2">Street Address Line 2</label>
+                        </div>
+                    </form>
+                </div>    
+            </div> 
+            
+            <div class="row">
+                <div class="col-xs-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="city">
+                             <label for="city">City</label>
+                        </div>
+                    </form>
+                </div>
+                 <div class="col-xs-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="state">
+                             <label for="state">State/Province</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+                        <div class="row">
+                <div class="col-xs-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="code">
+                             <label for="code">Postal/Zip code</label>
+                        </div>
+                    </form>
+                </div>
+                 <div class="col-xs-6">
+                    <form>
+                        <div class="form-group">
+                            <select class="form-control" name="country">
+                                <option>Please Select</option>
+                                <option>India</option>
+                                <option>United states</option>
+                                <option>Argentina</option>
+                                <option>Portugal</option>
+                            </select>
+                            <strong>Country</strong>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+            
+            
+        </div>
+        <hr class="hr_new">
+        
+        <div class="container column_style ">
+            <h3>Phone <span class="glyphicon glyphicon-user"></span>:     </h1>
+            <div class="row">
+                <div class="col-xs-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="area">
+                             <label for="area">Area Code</label>
+                        </div>
+                    </form>
+                </div>
+                 <div class="col-xs-9">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="number">
+                             <label for="number">Phone Number</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+               
+        </div>
+        <hr class="hr_new">
+        
+        <div class="container column_style">
+            <h3>E-mail<span class="glyphicon glyphicon-envelope"></span>:</h3>
+            <div class="col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="email" placeholder="ex:myname@example.com">
+                        </div>
+                    </form>
+            </div>
+        </div>
+         <hr class="hr_new">
+         
+         
+         <div class="container column_style">
+            <h3>Area Of Interest:</h3>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"  name="interest" value="performancecoach" >Performance Coach
+                </label>  <br>
+                <label>
+                    <input type="checkbox"  name="interest" value="accountmanager" >Account Manager
+                </label> <br>
+                <label>
+                    <input type="checkbox"  name="interest" value="administrative" >Administrative
+                </label><br> 
+                <label>
+                    <input type="checkbox"  name="interest" value="sales" >Sales
+                </label> 
+            </div>
+        </div>
+         <hr class="hr_new">
+         
+         <div class="container column_style ">
+            <h3>Education:    </h3>
+            <div class="row">
+                <div class="col-xs-12">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <select class="form-control" name="degree">
+                                <option></option>
+                                <option>Graduate</option>
+                                <option>Post Graduate</option>
+                                <option>PHD</option>
+                                <option>Diploma</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-group">
+                               <label for="institution">Institution</label>
+                            <input type="text" class="form-control" name="institution">
+                        </div>
+                        <div class="form-group">
+                               <label for="year">Year</label>
+                               <span class="glyphicon glyphicon-calendar">:</span>
+                               <input type="text" class="form-control" name="year" placeholder="YYYY">
+                        </div>
+                            
+                    </form>
+                </div>
+            </div> 
+        </div> 
+         <hr class="hr_new">
+         
+         
+        
+            <div class="container column_style">
+                 <h3>SKILLS AND STRENGTHS:</h3>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <form class="form-inline">
+                            
+                            <div class="form-group"> 
+                              <label for="year">Skill 1:</label>
+                              <input type="text" class="form-control" name="skill_1" placeholder="Hard Skill">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="year">Skill 2:</label>
+                                <input type="text" class="form-control" name="skill_2" placeholder="Hard Skill">
+                            </div>
+                            <div class="form-group">  
+                                <label for="year">Skill 3:</label>
+                                <input type="text" class="form-control" name="skill_3" placeholder="Soft Skill">
+                            </div>
+                            <div class="form-group">  
+                                <label for="year">Skill 4:</label>
+                                <input type="text" class="form-control" name="skill_4" placeholder="Soft Skill">
+                                
+                            </div>
+                            <div class="form-group"> 
+                              <label for="year">Skill 5:</label>
+                              <input type="text" class="form-control" name="skill_5" placeholder="Other Skill">
+                            </div>
+                            
+                     </form>
+                </div>
+            </div>
+           </div>
+         
+         
+         <hr class="hr_new">
+      
+            <div class="container column_style">
+                  <h3>PROFFESIONAL ACCOMPLISHMENT</h3>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form>
+                            
+                            <div class="form-group">  
+                              <input type="text" class="form-control input-lg" name="pa_1" placeholder="Example:[brief explanation of accomplishment] resulting in[quantifiable outcome,will draw eye and make a impact]">
+                            </div>
+                            <div class="form-group">  
+                                <input type="text" class="form-control input-lg" name="pa_2" placeholder="the best resume accomplishments measures your result in terms of money,percentages,time-saved.use numbers whenever possible.">
+                            </div>
+                            <div class="form-group">  
+                                <input type="text" class="form-control input-lg" name="pa_3" placeholder="Accomplishment3">
+                            </div>
+                            
+                     </form>
+                </div>
+            </div>
+            </div>
+        <hr class="hr_new">
+               
+            <div class="container column_style">
+                 <h3>WORK HISTORY</h3>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <form>
+                            
+                            <div class="form-group">  
+                              <input type="text" class="form-control" name="wh_1" placeholder="company 1,Job Title,(MM/YYYY)-present">
+                            </div>
+                            <div class="form-group">  
+                                <input type="text" class="form-control" name="wh_2" placeholder="company 2,Job Title,(MM/YYYY)">
+                            </div>
+                            <div class="form-group">  
+                                <input type="text" class="form-control" name="wh_3" placeholder="company 3,Job Title,(MM/YYYY)">
+                            </div>
+                            
+                     </form>
+                </div>
+            </div>
+            </div>
+        <hr class="hr_new">
+            <div class="container column_style">
+                <h3>UPLOAD</h3>
+                <div class="row">
+                    <div class="col-xs-12">
+                         
+                        <form  action=" "> 
+                            <label for="picture">Profile Picture</label>
+                            <span class="glyphicon glyphicon-upload">:</span>
+                             <input type="file" 
+                             name="picture" 
+                             accept="image/*"> 
+                            
+                        </form> 
+                      
+                </div>
+              
+            </div>  
+        </div>
+        <hr class="hr_new"> 
+        <button type="submit" value="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+    </body>
+</html>
